@@ -1,0 +1,20 @@
+﻿{
+  "sections": [
+    {"id": "section1", "title": "Computer Basics", "level": "Beginner"},
+    {"id": "section2", "title": "Networking", "level": "Beginner"},
+    {"id": "section3", "title": "Linux", "level": "Beginner"},
+    {"id": "section4", "title": "Programming", "level": "Beginner"},
+    {"id": "section5", "title": "Web Basics", "level": "Beginner"},
+    {"id": "section6", "title": "Security Basics", "level": "Beginner"},
+    {"id": "section7", "title": "Penetration Testing", "level": "Intermediate"},
+    {"id": "section8", "title": "Bug Bounty", "level": "Intermediate"},
+    {"id": "section9", "title": "Blue Team", "level": "Intermediate"},
+    {"id": "section10", "title": "Red Team", "level": "Intermediate"},
+    {"id": "section11", "title": "Cloud Security", "level": "Intermediate"},
+    {"id": "section12", "title": "Modern Security", "level": "Intermediate"},
+    {"id": "section13", "title": "Malware Analysis", "level": "Advanced"},
+    {"id": "section14", "title": "Reverse Engineering", "level": "Advanced"},
+    {"id": "section15", "title": "Digital Forensics", "level": "Advanced"},
+    {"id": "section16", "title": "Social Engineering", "level": "Advanced"}
+  ]
+}
