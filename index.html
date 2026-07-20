@@ -343,19 +343,55 @@
             margin-bottom: 2rem;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
         }
-        .start-here h2 {
+
+        .start-here-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem 0.8rem;
+            margin-bottom: 0.3rem;
+        }
+        .start-here-header h2 {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--text-primary);
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-bottom: 0.3rem;
+            margin: 0;
         }
-        .start-here h2 i {
+        .start-here-header h2 i {
             color: var(--accent-teal);
             font-size: 1.5rem;
         }
+
+        .btn-track {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-teal);
+            color: #0a0e17;
+            padding: 0.4rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: 0 0 20px rgba(42, 171, 238, 0.2);
+            border: 1px solid var(--accent-teal);
+            white-space: nowrap;
+        }
+        .btn-track:hover {
+            background: #3bb9ff;
+            transform: scale(1.04);
+            box-shadow: 0 0 35px rgba(42, 171, 238, 0.35);
+            color: #0a0e17;
+        }
+        .btn-track i {
+            font-size: 0.9rem;
+        }
+
         .start-here .sub {
             color: var(--text-secondary);
             font-size: 0.95rem;
@@ -856,6 +892,10 @@
             .start-here {
                 padding: 1.2rem 1.2rem 1rem;
             }
+            .btn-track {
+                font-size: 0.75rem;
+                padding: 0.3rem 1rem;
+            }
         }
 
         @media (max-width: 850px) {
@@ -913,7 +953,12 @@
             .start-here {
                 padding: 1rem 0.8rem;
             }
-            .start-here h2 {
+            .start-here-header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.5rem;
+            }
+            .start-here-header h2 {
                 font-size: 1rem;
             }
             .start-here .sub {
@@ -985,6 +1030,10 @@
                 top: -6px;
                 left: -6px;
             }
+            .btn-track {
+                width: 100%;
+                justify-content: center;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1015,7 +1064,7 @@
             .btn-telegram i {
                 font-size: 0.6rem;
             }
-            .start-here h2 {
+            .start-here-header h2 {
                 font-size: 0.9rem;
             }
             .start-here .sub {
@@ -1140,7 +1189,12 @@
 
             <!-- ─── START HERE ─── -->
             <section class="start-here" aria-labelledby="start-here-title">
-                <h2 id="start-here-title"><i class="fas fa-rocket" aria-hidden="true"></i> Start Here</h2>
+                <div class="start-here-header">
+                    <h2 id="start-here-title"><i class="fas fa-rocket" aria-hidden="true"></i> Start Here</h2>
+                    <a href="https://ehlabib.github.io/cybersecurity-checklist/" target="_blank" rel="noopener noreferrer" class="btn-track">
+                        <i class="fas fa-check-double" aria-hidden="true"></i> Track Your Progress
+                    </a>
+                </div>
                 <p class="sub">Follow this path in order — each step builds the foundation for the next.</p>
                 <div class="learning-path" role="list">
                     <a href="#section1" class="step beginner-step" role="listitem"><i class="fas fa-desktop" aria-hidden="true"></i> Computer Basics</a>
@@ -1325,10 +1379,9 @@
                             <div class="expand-icon">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></div>
                         </a>
 
-                        <!-- Specialization: Blue Team (with custom logo placeholder) -->
+                        <!-- Specialization: Blue Team -->
                         <a href="#section9" class="section-card" role="listitem" style="margin:0;">
                             <div class="card-top">
-                                <!-- Replace the icon below with your own Blue Team logo image if needed -->
                                 <i class="fas fa-shield-halved" style="color: #34d399;"></i>
                                 <h3>Blue Team</h3>
                                 <span class="badge intermediate">Intermediate</span>
@@ -1445,7 +1498,7 @@
                             <div class="expand-icon">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></div>
                         </a>
 
-                        <!-- NEW: Social Engineering -->
+                        <!-- Specialization: Social Engineering -->
                         <a href="#section16" class="section-card" role="listitem" style="margin:0; border-color: #f59e0b;">
                             <div class="card-top">
                                 <i class="fas fa-user-secret" style="color: #f59e0b;"></i>
