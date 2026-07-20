@@ -201,7 +201,7 @@
         }
 
         .brand-logo {
-            height: 36px;
+            height: 76px;
             width: auto;
             border-radius: 21%;
             border: 1px solid #425e84;
@@ -884,7 +884,7 @@
                 padding: 0.3rem 1rem;
             }
             .brand-logo {
-                height: 30px;
+                height: 50px;
             }
             .start-here h2 {
                 font-size: 1.2rem;
@@ -904,51 +904,58 @@
             }
         }
 
+        /* ─── MOBILE HEADER FIX ─── */
         @media (max-width: 750px) {
             .main-header {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 0.4rem;
-                padding: 0.4rem 1rem;
-                margin: 0 -0.8rem 1rem;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 0.3rem 0.6rem;
+                padding: 0.3rem 0.6rem;
+                margin: 0 -0.8rem 0.8rem;
             }
             .header-left {
-                justify-content: center;
-            }
-            .header-center .tagline {
-                font-size: 1.1rem;
-            }
-            .header-center .sub-tagline {
-                font-size: 0.6rem;
-            }
-            .header-right {
-                flex-direction: row;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 3px 8px;
-            }
-            .header-right .sub-btn-text {
-                font-size: 0.5rem;
-                width: 100%;
-                text-align: center;
-            }
-            .btn-telegram {
-                width: auto;
-                justify-content: center;
-                font-size: 0.7rem;
-                padding: 0.25rem 0.9rem;
+                flex: 0 1 auto;
+                gap: 6px;
             }
             .brand-logo {
                 height: 28px;
             }
             .header-left h1 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
-            .roadmap-grid {
-                grid-template-columns: 1fr;
+            .header-center {
+                flex: 0 1 auto;
+                min-width: auto;
+                text-align: center;
             }
-            .section-card .card-top h3 {
-                font-size: 0.95rem;
+            .header-center .tagline {
+                font-size: 0.9rem;
+                letter-spacing: 0.5px;
+            }
+            .header-center .sub-tagline {
+                font-size: 0.55rem;
+                letter-spacing: 0.5px;
+                margin-top: 0;
+            }
+            .header-right {
+                flex-direction: row;
+                align-items: center;
+                gap: 0.2rem 0.5rem;
+                flex: 0 1 auto;
+            }
+            .btn-telegram {
+                font-size: 0.6rem;
+                padding: 0.2rem 0.7rem;
+                gap: 4px;
+            }
+            .btn-telegram i {
+                font-size: 0.6rem;
+            }
+            .header-right .sub-btn-text {
+                font-size: 0.45rem;
+                letter-spacing: 0.5px;
             }
             .start-here {
                 padding: 1rem 0.8rem;
@@ -970,6 +977,12 @@
             }
             .learning-path .arrow {
                 font-size: 0.7rem;
+            }
+            .roadmap-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-card .card-top h3 {
+                font-size: 0.95rem;
             }
             .career-grid {
                 grid-template-columns: 1fr 1fr;
@@ -1041,28 +1054,32 @@
                 padding: 0 0.6rem 1.5rem;
             }
             .main-header {
-                padding: 0.3rem 0.6rem;
+                padding: 0.2rem 0.4rem;
+                gap: 0.2rem 0.4rem;
             }
             .header-left h1 {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             .brand-logo {
                 height: 24px;
                 padding: 1px;
             }
             .header-center .tagline {
-                font-size: 0.9rem;
+                font-size: 0.75rem;
             }
             .header-center .sub-tagline {
-                font-size: 0.5rem;
-                letter-spacing: 1px;
+                font-size: 0.45rem;
+                letter-spacing: 0.3px;
             }
             .btn-telegram {
-                font-size: 0.6rem;
-                padding: 0.2rem 0.6rem;
+                font-size: 0.5rem;
+                padding: 0.15rem 0.5rem;
             }
             .btn-telegram i {
-                font-size: 0.6rem;
+                font-size: 0.5rem;
+            }
+            .header-right .sub-btn-text {
+                font-size: 0.4rem;
             }
             .start-here-header h2 {
                 font-size: 0.9rem;
